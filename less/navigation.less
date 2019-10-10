@@ -1,1 +1,27 @@
 // Navigation Styles here
+.nav-container {
+	border-bottom: 2px dashed #c0c0c0;
+
+	nav {
+		max-width: 800px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 16px 0;
+
+		h1 {
+			width: 60%;
+		}
+
+		.nav-items {
+			.flex-item(space-around, center);
+			flex-grow: 1;
+
+			a {
+				text-decoration: none;
+				font-size: 1.5rem;
+				color: black;
+			}
+		}
+	}
+}
