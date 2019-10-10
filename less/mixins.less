@@ -14,4 +14,16 @@
 	border-radius: 20px;
 	width: @width;
 	background: @color;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.scale-hover(@time) {
+	transition: all @time ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }

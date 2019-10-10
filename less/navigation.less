@@ -1,6 +1,4 @@
 // Navigation Styles here
-@import 'variables';
-
 .nav-container {
 	border-bottom: 2px dashed #c0c0c0;
 
@@ -13,6 +11,10 @@
 
 		@media @mobile {
 			flex-direction: column;
+		}
+
+		@media @container-width {
+			padding: 16px;
 		}
 
 		h1 {
