@@ -1,4 +1,6 @@
 // Navigation Styles here
+@import 'variables';
+
 .nav-container {
 	border-bottom: 2px dashed #c0c0c0;
 
@@ -9,13 +11,24 @@
 		justify-content: space-between;
 		padding: 16px 0;
 
+		@media @mobile {
+			flex-direction: column;
+		}
+
 		h1 {
-			width: 60%;
+			@media @mobile {
+				margin: 0 auto;
+				margin-bottom: 16px;
+			}
 		}
 
 		.nav-items {
 			.flex-item(space-around, center);
-			flex-grow: 1;
+			width: 40%;
+
+			@media @mobile {
+				width: 100%;
+			}
 
 			a {
 				text-decoration: none;
